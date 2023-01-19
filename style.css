@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+}
+
+#portrait{
+    height:100vh;
+    width:auto;
+    background-color: antiquewhite;
+    border-bottom: 5px black solid;
+    border-right: 5px black solid;
+}
