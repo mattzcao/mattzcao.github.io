@@ -1,11 +1,15 @@
+/*Font Faces*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     margin: 0px;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
 }
 
-#portrait{
-    height:100vh;
-    width:auto;
-    background-color: antiquewhite;
-    border-bottom: 5px black solid;
-    border-right: 5px black solid;
+
+.email {
+    font-family:'Roboto Mono', monospace;
 }
+
+
