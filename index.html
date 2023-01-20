@@ -9,21 +9,45 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="style.css">
     
-
     <!--Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e0eea44a04.js" crossorigin="anonymous"></script>
-
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <h1> Hi, I'm Matt</h1>
-    <h2> You can contact me at <span class="email">matt [dot] z [dot] cao [at] berkeley [dot] edu</span></h2>
-    <em>or can also find me on these platforms</em>
-    <!--Add github, discord -->
+    <main>
+        <div class="header">
+            <h1> Hi! I'm <span id="changing-name">Matt</span>.</h1>
+            <p>
+                I’m a freshman at UC Berkeley majoring in <span class="dep-name"><a href="https://mcb.berkeley.edu/">Molecular &amp; Cell Biology (MCB)</a></span> and minoring in <span class="dep-name"></span><a href="https://eecs.berkeley.edu/resources/undergrads/minors/eecs">Electrical Engineering &amp; Computer Science (EECS)</a>.</span> I currently have experience in wet labs, coding and teaching.
+            </p>
+        </div>
+        <div class="find-contact">
+            <h2> You can contact me at</h2>
+            <h3>
+                <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+                <a href = "mailto: matt.z.cao@berkeley.edu" class="email contact">mattzcao@berkeley.edu</a>
+                <div class="tooltip"><a onclick="copyContact('mattzcao@berkeley.edu')"><i class="fa-solid fa-copy copy"></i></a>
+                    <span class="tooltiptext">Copy "mattzcao@berkeley.edu" to clipboard</span>
+                  </div> 
+                
 
-    <p>
-        I’m a freshman at UC Berkeley majoring in <span class="dep-name"><a href="https://mcb.berkeley.edu/">Molecular &amp Cell Biology (MCB)</a></span> and minoring in <span class="dep-name"></span><a href="https://eecs.berkeley.edu/resources/undergrads/minors/eecs">computer science (EECS)</a>.</span>
-    </p>
+            </h3>
+            <h3>
+                <i class="fa-brands fa-discord contact-icon"></i>
+                <a onclick="copyContact('zien#2157')" class="discord contact">zien&#35;2157 <i class="fa-solid fa-copy copy"></i></a> 
+            </h3>
+        </div>
+        <div class="find-work">
+            <h2>and you can find my coding work at</h2>
+            <h3>
+                <a href="https://github.com/mattzcao" target="_blank"><i class="fa fa-github grow"></i></a>
+                <a href="https://codepen.io/mattzcao" target="_blank"><i class="fa fa-codepen grow"></i></a>
+                <a href="https://www.linkedin.com/in/mattzcao/" target="_blank"><i class="fab fa-linkedin-in grow"></i></a>
+            </h3>
+        </div>
+    </main>
+
+    <div class="site-details"><a href="./sitedetails.html"><i class="fa-solid fa-toolbox"></i></div></div>
 </body>
 </html>

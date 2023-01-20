@@ -2,14 +2,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*colors*/
+:root {
+    --bgc: #2F3E46; /*Charcoal*/
+    --textc: #CAD2C5; /*Ash Gray*/
+    --hlc: #84A98C; /*Dark Sea Green*/
+    --hluc: #52796F; /*Hookers Green*/
+    --dark-slate-gray: #354F52;
+}
+
 body {
     margin: 0px;
     font-family:'Roboto', Arial, Helvetica, sans-serif;
+    background-color:var(--bgc);
+    color:var(--textc);
+}
+main {
+    text-align:center;
+    margin:auto;
+    border:white 1px solid;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding:5px;
+
 }
 
-
-.email {
+a {
+    color:var(--hlc)
+}
+.contact {
     font-family:'Roboto Mono', monospace;
 }
+.contact-icon {
+    padding:5px;
+}
+a.email {
+    text-decoration: none; 
+}
+.email {
+    border-color: var(--hluc);
+    border-width:0 0 5px 0;
+    border-style:solid;
+    transition-duration:400ms;
+    background-color:none;
+    color:var(--hlc);
+
+}.email:hover{
+    background-color: var(--hluc);
+    color:var(--textc);
+    transition-duration: 450ms;
+}
+
+a.discord:hover {
+    cursor:copy;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    padding:10px;
+    font-size:48px;
+}
+.grow:hover{
+    transform: scale(1.5);
+}
+.copy {
+    color: var(--textc);
+}
 
 
+
+
+/*From https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_arrow_bottom*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition-duration:500ms;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #1e282eE9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 540%;
+    margin-left: -180px;
+    font-size:15px;
+    transition-duration:100ms;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+  .site-details {
+    position: absolute;
+    bottom:15px;
+    left:15px;
+    font-size:25px;
+  }
