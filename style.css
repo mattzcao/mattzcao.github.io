@@ -24,7 +24,6 @@ body {
 Navigation bar
 */
 nav ul {
-	border: 1px solid grey;
 	border-left:none;
 	top:0;
 	margin:0;
@@ -38,19 +37,16 @@ nav ul li a {
 	position:relative;
 	padding:18px;
 	display:block;
-	border-right:1px solid grey;
 	text-align:center;
 	text-decoration:none;
 	color:inherit;
 	font-size:20px;
-	transition-duration:500ms;
-    float:right;
-	border-left:1px solid rgb(231,231,231);
+	transition-duration:400ms;
+  float:right;
 	border-right:none;
 }
 
 nav ul li a:hover {
-	background-color:gray;
 	transition: all ease-in-out 300ms;
 }
 nav ul li a.name:hover {
@@ -58,7 +54,7 @@ nav ul li a.name:hover {
 	cursor:default;
 }
 nav ul li a:active {
-	color:orchid;
+	color:var(--textc);
 }
 nav ul li a::before {
 	content:'';
@@ -73,7 +69,7 @@ nav ul li a::before {
 	transition: all ease-in-out 500ms;
 }
 a::before {
-	background:linear-gradient(to right, orchid,mediumorchid);
+	background:var(--textc);
 }
 a.name:hover::before {
 	width:0;
