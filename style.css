@@ -128,7 +128,7 @@ a.email {
     transition-duration: 450ms;
 }
 
-a.discord:hover {
+.copy:hover {
     cursor:copy;
 }
 
@@ -138,7 +138,7 @@ a.discord:hover {
     font-size:48px;
 }
 .grow:hover{
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 .copy {
     color: var(--textc);
@@ -166,7 +166,7 @@ a.discord:hover {
     z-index: 1;
     bottom: 150%;
     left: 540%;
-    margin-left: -180px;
+    margin-left: -230px;
     font-size:15px;
     transition-duration:100ms;
   }
@@ -208,6 +208,7 @@ a.discord:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color:#000;
   }
   
   /* Modal Content */
@@ -234,3 +235,20 @@ a.discord:hover {
     cursor: pointer;
   }
 
+
+  .charcoal-block{
+    background-color:#2F3E46;
+  }
+  .ashgray-block{
+    background-color:#CAD2C5
+  }.darkseagreen-block{
+    background-color:#84A98C;
+  }.hookersgreen-block {
+background-color: #52796F;
+  }.darkslategray-block {
+background-color: #354F52;
+  }
+
+  .block{
+    padding:5px;
+  }
