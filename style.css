@@ -6,14 +6,16 @@
 /*colors*/
 :root {
     --bgc: #2F3E46; /*Charcoal*/
+    --bgc: #F5F5F5; /*Charcoal*/
     --textc: #CAD2C5; /*Ash Gray*/
+    --textc: #313639;
     --hlc: #84A98C; /*Dark Sea Green*/
     --hluc: #52796F; /*Hookers Green*/
     --dark-slate-gray: #354F52;
 }
 body {
     margin: 0px;
-    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size:21px;
     background-color:var(--bgc);
     color:var(--textc);
@@ -99,9 +101,7 @@ nav a:hover::before {
     line-height:1.5;
 }
 
-h2 {
-    font-family: "Jetbeans Mono", monospace;
-}
+
 a {
     color:var(--hlc)
 }
@@ -252,3 +252,6 @@ background-color: #354F52;
   .block{
     padding:5px;
   }
+
+
+  
