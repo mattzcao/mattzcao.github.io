@@ -4,52 +4,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Matthew Cao</title>
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
         
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="style.css">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="main.css">
         
-        <!--Scripts-->
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/e0eea44a04.js" crossorigin="anonymous"></script>
         <script src="scripts.js"></script>
+
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">Labs</a></li>
-                    <li><a href="">Coding</a></li>
-                    <li><a href="">Teaching</a></li>
-                </ul>
-            </nav>
-        </header>
 
         <main>
             <div class="content">
                 <div class="about-me">
-                    <h1>Matthew Cao</h1>
+                    <div id="name-intro">
+                        <h1>Hi I'm <span id="changing-name" class="name">MATTHEW CAO</span></h1>
+                    </div>
                     <p>
-                        I am a student at UC Berkeley double majoring in <span class="dep-name"><a href="https://mcb.berkeley.edu/" target="_blank">Molecular &amp; Cell Biology</a></span> and <span class="dep-name"></span><a href="https://eecs.berkeley.edu/resources/undergrads/cs" target="_blank">Computer Science</a>.</span> I'm experienced in wet labs, coding and teaching. Feel free to reach out with the following links as well as checking out my coding and web design work.
+                        I'm a student at UC Berkeley double majoring in <span class="dep-name">Molecular &amp; Cell Biology</span> and <span class="dep-name">Data Science.</span> I'm experienced in wet lab research, research analysis, programming, and web development. 
                     </p>
                     <p>
-
+                        I also run <b>Zien Tutoring</b>, a tutoring program that helps students succeed in Berkeley's various weeder classes including but not limited to chemistry (1A/1AL, 1B), physics (8A, 8B, 7A), computer science (61A, 61B), mathematics (1A, 1B, 16A, 16B), and organic chemistry (3A/3AL, 3B/3BL). If you are interested, click on the  email icon below, and add "Zien Tutoring" in the subject line.
                     </p>
                 </div>
         
                 <div class="find-work">
                     <h3>
-                        <a href="mailto: matt.z.cao@berkeley.edu"><i class="fa fa-envelope contact-icon grow" aria-hidden="true"></i></a>
-                        <a href="https://github.com/mattzcao" target="_blank"><i class="fa fa-github grow"></i></a>
-                        <a href="https://codepen.io/mattzcao" target="_blank"><i class="fa fa-codepen grow"></i></a>
-                        <a href="https://www.linkedin.com/in/mattzcao/" target="_blank"><i class="fab fa-linkedin-in grow"></i></a>
+                        <a href="mailto: mattzcao@berkeley.edu"><i class="fa fa-envelope contact-icon contact-buttons" aria-hidden="true"></i></a>
+                        <a href="https://github.com/mattzcao" target="_blank"><i class="fa fa-github contact-buttons"></i></a>
+                        <a href="https://codepen.io/mattzcao" target="_blank"><i class="fa fa-codepen contact-buttons"></i></a>
+                        <a href="https://www.linkedin.com/in/mattzcao/" target="_blank"><i class="fab fa-linkedin-in contact-buttons"></i></a>
                     </h3>
                 </div>
             </div>
 
         </main>
         
-        <!--
         <script>
             //Code appropriated from https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
             const copyContact = async (contact) => {
@@ -63,7 +58,7 @@
 
             //Code appropriated from https://codepen.io/alvarotrigo/pen/ZEJgqLN
             const wordflick = () => {
-                let words = ['Matt', 'Matthew Cao', 'Zien', 'mattzcao', 'Matthew Zien Cao'],
+                let words = ['Matthew Cao', 'Zien Tutoring', '@mattzcao', '曹子恩'],
                 part,
                 i = 0,
                 offset = 0,
@@ -123,7 +118,6 @@
                 if (event.target == modal) modal.style.display = "none";
             }
         </script>
-        -->
     </body>
 
 
