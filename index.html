@@ -18,22 +18,35 @@
 
     </head>
     <body>
-
+        <nav class="navbar navbar--fixed-top">
+            <div class="navbar-inner">
+                <div class="navbar--items navbar--items--right">
+                    <button onclick="toggle_mode()" class="toggle-mode-button">
+                        <span  class="mode-toggle-icon">
+                            <i id="toggleIcon" class="fa-regular fa-lightbulb"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
         <main>
             <div class="content">
                 <div class="about-me">
                     <div id="name-intro">
-                        <h1>Hi I'm <span id="changing-name" class="name">MATTHEW CAO</span></h1>
+                        <h1><span class="hi-im">Hi I'm</span> <span id="changing-name" class="name">MATTHEW CAO</span></h1>
                     </div>
                     <p>
-                        I'm a student at UC Berkeley double majoring in <span class="dep-name">Molecular &amp; Cell Biology</span> and <span class="dep-name">Data Science.</span> I'm experienced in wet lab research, research analysis, programming, and web development. 
+                        I'm a student at UC Berkeley double majoring in <span class="dep-name">Molecular &amp; Cell Biology</span> <i>with a concentration in molecular therapeutics</i> and <span class="dep-name">Data Science.</span> I'm experienced in wet lab research, research analysis, protein visualization, programming, web development, and graphic design. 
                     </p>
                     <p>
                         I also run <b>Zien Tutoring</b>, a tutoring program that helps students succeed in Berkeley's various weeder classes including but not limited to chemistry (1A/1AL, 1B), physics (8A, 8B, 7A), computer science (61A, 61B), mathematics (1A, 1B, 16A, 16B), and organic chemistry (3A/3AL, 3B/3BL). If you are interested, click on the  email icon below, and add "Zien Tutoring" in the subject line.
                     </p>
+                    <p>
+                        When I'm not doing research, coding, or tutoring, I love playing games, looking at pictures of cats, and eating crackers.
+                    </p>
                 </div>
         
-                <div class="find-work">
+                <div class="contact-icon-row">
                     <h3>
                         <a href="mailto: mattzcao@berkeley.edu"><i class="fa fa-envelope contact-icon contact-buttons" aria-hidden="true"></i></a>
                         <a href="https://github.com/mattzcao" target="_blank"><i class="fa fa-github contact-buttons"></i></a>
@@ -45,6 +58,26 @@
 
         </main>
         
+        <script>
+            
+            function toggle_mode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            
+
+                var icon = document.getElementById('toggleIcon');
+
+                if (document.body.classList.contains('dark-mode')) {
+                    icon.classList.remove('fa-regular');
+                    icon.classList.add('fa-solid');
+                    
+                } else {
+                    icon.classList.remove('fa-solid');
+                    icon.classList.add('fa-regular');
+                }
+            }
+        </script>
+
         <script>
             //Code appropriated from https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
             const copyContact = async (contact) => {
@@ -58,7 +91,7 @@
 
             //Code appropriated from https://codepen.io/alvarotrigo/pen/ZEJgqLN
             const wordflick = () => {
-                let words = ['Matthew Cao', 'Zien Tutoring', '@mattzcao', '曹子恩'],
+                let words = ['Matthew Cao', 'Zien Tutoring', '@mattzcao', '曹子恩', 'Matt 🐮'],
                 part,
                 i = 0,
                 offset = 0,

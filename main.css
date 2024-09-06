@@ -3,8 +3,11 @@
 
 :root {
     --bgc: #F5F5F5; 
+    --bgc--dark-mode: #08111c;
     --textc: #313639;
-    --hlc: #0071BC; 
+    --textc--dark-mode: #d7d7de;
+    --hlc: #2c5190; 
+    --hlc--dark-mode: #3985e3; 
     --hluc: #29ABE2; 
 }
 
@@ -16,6 +19,9 @@ body {
   background-color: var(--bgc);
   color:            var(--textc);
   cursor:           default;
+} .dark-mode {
+  background-color: var(--bgc--dark-mode);
+  color:var(--textc--dark-mode);
 }
 
 @media only screen and (min-width: 769px) {
@@ -26,12 +32,67 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .contact-icon-row {
+    text-align:left;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .content {
     padding:50px;
   }
+  .contact-icon-row {
+    text-align:justify;
+    text-justify: inter-word;
+  }
+}
+
+/* Navigation Bar */
+.navbar {
+  /* background-color: grey;*/
+  padding:25px;
+  margin:0;
+  z-index: 2;
+}
+
+.navbar--fixed-top {
+  position: sticky;
+  top: 0;
+}
+
+.navbar-inner {
+  /*background-color: lightgray;*/
+}
+
+.navbar--items {
+  align-items: center;
+    display: flex;
+}
+
+.navbar--items--right {
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+
+.toggle-mode-button {
+  border-radius:50%;
+  width:48px;
+  height:48px;
+  background-color: transparent;
+  transition-duration: 200ms;
+  border: none;
+}.toggle-mode-button:hover {
+  background-color: #dedede;
+  transition-duration: 200ms;
+}.dark-mode .toggle-mode-button:hover {
+  background-color: #18212c;
+}
+
+.mode-toggle-icon {
+  font-size: 24pt;
+  color: var(--hlc)
+}.dark-mode .mode-toggle-icon {
+  color: var(--hlc--dark-mode);
 }
 
 .about-me p {
@@ -40,29 +101,17 @@ body {
 }
 
 a {
-    color:var(--hlc)
+  color:var(--hlc);
+  cursor:pointer;
 }
+
+
 .contact {
     font-family:"Jetbeans Mono", monospace;
 }
+
 .contact-icon {
     padding:5px;
-}
-a.email {
-    text-decoration: none; 
-}
-.email {
-    border-color: var(--hluc);
-    border-width:0 0 5px 0;
-    border-style:solid;
-    transition-duration:400ms;
-    background-color:none;
-    color:var(--hlc);
-
-}.email:hover{
-    background-color: var(--hluc);
-    color:var(--textc);
-    transition-duration: 450ms;
 }
 
 .copy:hover {
@@ -74,6 +123,8 @@ a.email {
     padding:10px;
     font-size:48px;
     color:var(--hlc);
+}.dark-mode .contact-buttons {
+    color:var(--hlc--dark-mode);
 }
 
 .copy {
@@ -145,6 +196,12 @@ a.email {
 
 .name {
   color: var(--hlc);
+}.dark-mode .name {
+  color: var(--textc--dark-mode);
+}
+
+.dark-mode .hi-im {
+  color: var(--hlc--dark-mode);
 }
 
 #name-intro {
@@ -154,3 +211,4 @@ a.email {
 .dep-name {
   text-decoration: underline;
 }
+
