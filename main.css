@@ -209,6 +209,6 @@ a {
 }
 
 .dep-name {
-  text-decoration: underline;
+  font-weight:bold;
 }
 
