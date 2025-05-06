@@ -208,3 +208,21 @@ a {
   font-weight:bold;
 }
 
+.portrait {
+  height:200px;
+  border-radius:50%;
+}
+
+.resume {
+  height:40px;
+  width:175px;
+  border-radius:50px;
+  border: none;
+  font-size: 15px;
+  background-color: var(--hlc);
+  color:white;
+  cursor:pointer;
+  font-family:      "Lato", sans-serif;
+  margin-right: 15px;
+}
+
