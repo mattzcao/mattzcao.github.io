@@ -1,5 +1,7 @@
 /*Font Faces*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 :root {
     --bgc: #F5F5F5; 
@@ -214,6 +216,7 @@ a {
 }
 
 .resume {
+  margin-top:15px;
   height:40px;
   width:175px;
   border-radius:50px;
@@ -233,4 +236,15 @@ a {
   height:200px;
   width: calc(100% + 100px);
   border-radius:100px 0 100px 0;*/
+  /**border: 1px black solid;
+  width:min-content;
+  transform-origin: center; /* Sets the rotation point to the center of the container */
+  /*transform: rotate(10deg);*/
+}
+
+
+.email {
+  font-family:      "Space Mono", monospace;
+  width:230px;
+  cursor:copy;
 }

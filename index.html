@@ -16,8 +16,9 @@
         <script src="https://kit.fontawesome.com/e0eea44a04.js" crossorigin="anonymous"></script>
         <script src="scripts.js"></script>
 
-        <meta property="og:title" content="Matthew Cao" />
-        <meta property="og:image" content="media/portrait.jpeg" />
+        <meta property="title" content="Matthew Cao" />
+        <meta property="image" content="media/portrait.jpeg" />
+        <meta name="description" content="Matthew Cao's Portfolio">
     </head>
     <body>
         <nav class="navbar navbar--fixed-top">
@@ -45,28 +46,27 @@
                     <p>
                         <a href="resume/biology.pdf" target="_blank"><button class="resume"><i class="fa-solid fa-dna"></i> Biology Resume</button></a>
                         <a href="resume/pedagogy.pdf" target="_blank"><button class="resume"><i class="fa-solid fa-graduation-cap"></i> Pedagogy Resume</button></a>
+                        <a><button class="resume email" onclick="getEmail()"><i class="fa fa-envelope"></i> mzc[at]berkeley.edu</button></a>
                     </p>
 
                     <p>
-                        I'm a student at UC Berkeley studying <span class="dep-name">Molecular &amp; Cell Biology</span> &#40;specializing in molecular therapeutics&#41; and <span class="dep-name">Data Science</span> &#40;specializing in computational methods in genomics and genetics&#41;. I'm experienced in wet lab research, research analysis, protein visualization, programming, web development, and graphic design.
-                        
-                        If you'd like to see some of the web development work I have done, you can find it on my <a href="https://codepen.io/mattzcao" target="_blank">codepen</a> in the icons below. I am also the webmaster of the <a href="https://drawntoscale.studentorg.berkeley.edu" target="_blank">Drawn to Scale A Cappella</a> and <a href="https://www.jcclinic.org" target="_blank">Junior Care Clinic</a>.
+                        I’m an undergraduate at UC Berkeley, pursuing a B.A. in Molecular & Cell Biology (<em>emph. molecular therapeutics</em>) and a minor in Data Science (<em>emph. computational methods in genomics and genetics</em>). I aim to bridge the gap between biology and data science, so I can explore the intricacies of life sciences through both experimental and data-driven lenses. My experiences encompass <b>wet lab research</b>, <b>computational biology tools</b> like <a href="https://alphafoldserver.com/welcome" target="_blank">AlphaFold</a> and <a href="https://www.cgl.ucsf.edu/chimerax/" target="_blank">ChimeraX</a>, and <b>data analysis</b> with machine learning techniques to genomic datasets.
                     </p>
                     <p>
-                        You may know me from <b>Zien Tutoring</b>, a tutoring program I run that helps students succeed in Berkeley's various weeder classes including but not limited to chemistry (1A/1AL, 1B), physics (8A, 8B, 7A), computer science (61A, 61B), mathematics (1A, 1B, 16A, 16B), and organic chemistry (3A/3AL, 3B/3BL). If you are interested, click on the email icon below, and add "Zien Tutoring" in the subject line. Note that I may no longer be tutoring certain listed classes.
+                        I founded <b>Zien Tutoring</b>, a service I started in my (highschool) senior year summer to help students apply to college. My application resources have reached over 1000 students across the local school district. In university, I continued to tutor to help students succeed in Berkeley's various weeder classes: Chem 1A, Physics 8A/8B, CS 61A/61B, and (organic chemistry) CHEM 3A/3B. Additional resources I created and organized has impacted over 1500 students. If you are interested, click on the email icon below, and add "Zien Tutoring" in the subject line. 
                     </p>
                     <p>
-                        When I'm not doing research, coding, or tutoring, I love playing games (League of Legends fan), looking at pictures of cats, and eating brownies.
+                        Web development is also a big part of my life as both a coding and art medium I have enjoyed since middle school. I currently am web designer webmaster of my acapella group <a href="https://drawntoscale.studentorg.berkeley.edu" target="_blank">Drawn to Scale A Cappella</a> and of my public health club <a href="https://www.jcclinic.org" target="_blank">Junior Care Clinic</a>.
+                    </p>
+                    
+                    <p>
+                        Academics aside, I enjoy playing video games with my friends (League of Legends fan), looking at pictures of cats <i class="fa-solid fa-cat"></i>, and eating brownies.
                     </p>
                 </div>
         
                 <div class="contact-icon-row">
-                    <h3>
-                        <a href="mailto: mattzcao@berkeley.edu"><i class="fa fa-envelope contact-icon contact-buttons" aria-hidden="true"></i></a>
                         <a href="https://github.com/mattzcao" target="_blank"><i class="fa fa-github contact-buttons"></i></a>
-                        <a href="https://codepen.io/mattzcao" target="_blank"><i class="fa fa-codepen contact-buttons"></i></a>
                         <a href="https://www.linkedin.com/in/mattzcao/" target="_blank"><i class="fab fa-linkedin-in contact-buttons"></i></a>
-                    </h3>
                 </div>
             </div>
 
@@ -164,6 +164,14 @@
             window.onclick = (event) => {
                 if (event.target == modal) modal.style.display = "none";
             }
+
+            function getEmail() {
+    
+                navigator.clipboard.writeText("mzc@berkeley.edu");
+
+                // Alert the copied text
+                alert("Copied the text: " + "mzc@berkeley.edu");
+                }
         </script>
     </body>
 
