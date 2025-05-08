@@ -24,6 +24,7 @@ body {
 } .dark-mode {
   background-color: var(--bgc--dark-mode);
   color:var(--textc--dark-mode);
+  border-color: var(--bgc--dark-mode)
 }
 
 @media only screen and (min-width: 801px) {
@@ -212,7 +213,17 @@ a {
 
 .portrait {
   height:200px;
+  border:10px solid;
+
+  border-color: var(--bgc);
+  margin-left: -10px;
+  margin-top: -10px;
   border-radius:50% 50% 0 50%;
+  /*border-radius: 50%;*/
+}
+
+.dark-mode .portrait {
+  border-color: var(--bgc--dark-mode);
 }
 
 .resume {
@@ -225,17 +236,19 @@ a {
   background-color: var(--hlc);
   color:white;
   cursor:pointer;
-  font-family:      "Lato", sans-serif;
+  font-family:    "Lato", sans-serif;
   margin-right: 15px;
 }
 
 .header {
-  /*background-image:url(media/in-doe.jpg);
-  background-position-y: 20%;
+  background-image:url(media/berkeleybanner.jpeg);
+  background-position-y: 50%;
   background-size: cover;
   height:200px;
-  width: calc(100% + 100px);
-  border-radius:100px 0 100px 0;*/
+  width: 100%;
+  
+  border-radius:100px;
+  /*border-radius:100px 100px 0 100px;*/
   /**border: 1px black solid;
   width:min-content;
   transform-origin: center; /* Sets the rotation point to the center of the container */
