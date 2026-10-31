@@ -356,11 +356,30 @@ a {
   opacity: 0.45;
 }
 
-.post-body img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.blog-figure {
   margin: 32px auto;
+  text-align: center;
+}
+
+.blog-figure img {
+  display: block;
+  max-width: 75%;
+  max-height: min(480px, 55vh);
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.blog-figure figcaption {
+  max-width: 75%;
+  margin: 10px auto 0;
+  color: #667078;
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+
+.dark-mode .blog-figure figcaption {
+  color: #aeb8c1;
 }
 
 .post-lede {
@@ -370,5 +389,10 @@ a {
 @media only screen and (max-width: 800px) {
   .blog-content {
     padding: 0 30px 40px;
+  }
+
+  .blog-figure img,
+  .blog-figure figcaption {
+    max-width: 100%;
   }
 }
